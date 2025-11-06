@@ -3,8 +3,9 @@ name: Deploy to HuggingFace Spaces
 on:
   push:
     branches:
-      - dev
-      - main
+      # - dev
+      # - main
+      - disabled
   workflow_dispatch:
 
 jobs:

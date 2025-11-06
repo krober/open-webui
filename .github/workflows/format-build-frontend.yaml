@@ -3,16 +3,18 @@ name: Frontend Build
 on:
   push:
     branches:
-      - main
-      - dev
+      # - main
+      # - dev
+      - disabled
     paths-ignore:
       - 'backend/**'
       - 'pyproject.toml'
       - 'uv.lock'
   pull_request:
     branches:
-      - main
-      - dev
+      # - main
+      # - dev
+      - disabled
     paths-ignore:
       - 'backend/**'
       - 'pyproject.toml'

@@ -3,16 +3,18 @@ name: Python CI
 on:
   push:
     branches:
-      - main
-      - dev
+      # - main
+      # - dev
+      - disabled
     paths:
       - 'backend/**'
       - 'pyproject.toml'
       - 'uv.lock'
   pull_request:
     branches:
-      - main
-      - dev
+      # - main
+      # - dev
+      - disabled
     paths:
       - 'backend/**'
       - 'pyproject.toml'
