@@ -28,7 +28,7 @@
 		aria-label={placeholder}
 	>
 		<Select.Value
-			class="inline-flex h-input px-0.5 w-full outline-hidden bg-transparent truncate  placeholder-gray-400  focus:outline-hidden capitalize"
+			class="inline-flex h-input px-0.5 w-full outline-hidden bg-transparent truncate  placeholder-gray-400  focus:outline-hidden"
 			{placeholder}
 		/>
 
@@ -55,7 +55,7 @@
 		<slot>
 			{#each items as item}
 				<Select.Item
-					class="flex  gap-2  items-center px-3 py-1.5 text-sm  cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl capitalize"
+					class="flex  gap-2  items-center px-3 py-1.5 text-sm  cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl"
 					value={item.value}
 					label={item.label}
 				>
@@ -75,7 +75,7 @@
 <!-- <button
 	class="min-w-fit outline-none p-1.5 {selectedTag === ''
 		? ''
-		: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+		: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
 	on:click={() => {
 		selectedTag = '';
 	}}
@@ -86,7 +86,7 @@
 <button
 	class="min-w-fit outline-none p-1.5 {selectedTag === ''
 		? ''
-		: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+		: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
 	on:click={() => {
 		selectedTag = '';
 	}}
@@ -97,7 +97,7 @@
 <button
 	class="min-w-fit outline-none p-1.5 {selectedTag === ''
 		? ''
-		: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+		: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
 	on:click={() => {
 		selectedTag = '';
 	}}

@@ -48,7 +48,7 @@
 						</div>
 
 						<Tooltip content={_tools[tool]?.meta?.description ?? _tools[tool].id}>
-							<div class=" py-0.5 text-sm w-full capitalize font-medium">
+							<div class=" py-0.5 text-sm w-full font-medium">
 								{_tools[tool].name}
 							</div>
 						</Tooltip>

@@ -17,7 +17,6 @@
 	} from '$lib/apis/knowledge';
 
 	import { goto } from '$app/navigation';
-	import { capitalizeFirstLetter } from '$lib/utils';
 
 	import DeleteConfirmDialog from '../common/ConfirmDialog.svelte';
 	import ItemMenu from './Knowledge/ItemMenu.svelte';
@@ -243,7 +242,7 @@
 
 									<div class=" flex items-center gap-1 justify-between px-1.5">
 										<div class=" flex items-center gap-2">
-											<div class=" text-sm font-medium line-clamp-1 capitalize">{item.name}</div>
+											<div class=" text-sm font-medium line-clamp-1">{item.name}</div>
 										</div>
 
 										<div>
@@ -254,9 +253,7 @@
 													placement="top-start"
 												>
 													{$i18n.t('By {{name}}', {
-														name: capitalizeFirstLetter(
-															item?.user?.name ?? item?.user?.email ?? $i18n.t('Deleted User')
-														)
+														name: item?.user?.name ?? item?.user?.email ?? $i18n.t('Deleted User')
 													})}
 												</Tooltip>
 											</div>

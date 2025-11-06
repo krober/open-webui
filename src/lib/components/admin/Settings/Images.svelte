@@ -691,7 +691,7 @@
 									{#each REQUIRED_WORKFLOW_NODES as node}
 										<div class="flex w-full flex-col">
 											<div class="shrink-0">
-												<div class=" capitalize line-clamp-1 w-20 text-gray-400 dark:text-gray-500">
+												<div class="line-clamp-1 w-20 text-gray-400 dark:text-gray-500">
 													{node.type}{node.type === 'prompt' ? '*' : ''}
 												</div>
 											</div>
@@ -1085,7 +1085,7 @@
 									{#each REQUIRED_EDIT_WORKFLOW_NODES as node}
 										<div class="flex w-full flex-col">
 											<div class="shrink-0">
-												<div class=" capitalize line-clamp-1 w-20 text-gray-400 dark:text-gray-500">
+												<div class="line-clamp-1 w-20 text-gray-400 dark:text-gray-500">
 													{node.type}{node.type === 'prompt' ? '*' : ''}
 												</div>
 											</div>

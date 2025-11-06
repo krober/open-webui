@@ -18,7 +18,6 @@
 		getToolList,
 		getTools
 	} from '$lib/apis/tools';
-	import { capitalizeFirstLetter } from '$lib/utils';
 
 	import Tooltip from '../common/Tooltip.svelte';
 	import ConfirmDialog from '../common/ConfirmDialog.svelte';
@@ -386,9 +385,7 @@
 													placement="top-start"
 												>
 													{$i18n.t('By {{name}}', {
-														name: capitalizeFirstLetter(
-															tool?.user?.name ?? tool?.user?.email ?? $i18n.t('Deleted User')
-														)
+														name: tool?.user?.name ?? tool?.user?.email ?? $i18n.t('Deleted User')
 													})}
 												</Tooltip>
 											</div>

@@ -115,11 +115,11 @@
 		{#if $config?.license_metadata}
 			<div class="mb-2 text-xs">
 				{#if !$WEBUI_NAME.includes('Open WebUI')}
-					<span class=" text-gray-500 dark:text-gray-300 font-medium">{$WEBUI_NAME}</span> -
+					<span class="text-gray-500 dark:text-gray-300 font-medium">{$WEBUI_NAME}</span> -
 				{/if}
 
-				<span class=" capitalize">{$config?.license_metadata?.type}</span> license purchased by
-				<span class=" capitalize">{$config?.license_metadata?.organization_name}</span>
+				<span>{$config?.license_metadata?.type}</span> license purchased by
+				<span>{$config?.license_metadata?.organization_name}</span>
 			</div>
 		{:else}
 			<div class="flex space-x-1">

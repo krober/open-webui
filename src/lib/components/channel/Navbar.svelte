@@ -56,7 +56,7 @@
 			"
 			>
 				{#if channel}
-					<div class="line-clamp-1 capitalize font-medium font-primary text-lg">
+					<div class="line-clamp-1 font-medium font-primary text-lg">
 						{channel.name}
 					</div>
 				{/if}

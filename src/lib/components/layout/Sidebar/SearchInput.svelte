@@ -312,7 +312,7 @@
 		>
 			<div class="px-3 py-2.5 text-xs group">
 				{#if filteredItems.length > 0}
-					<div class="px-1 font-medium dark:text-gray-300 text-gray-700 mb-1 capitalize">
+					<div class="px-1 font-medium dark:text-gray-300 text-gray-700 mb-1">
 						{selectedOption}
 					</div>
 

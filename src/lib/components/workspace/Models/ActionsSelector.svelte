@@ -49,7 +49,7 @@
 							/>
 						</div>
 
-						<div class=" py-0.5 text-sm w-full capitalize font-medium">
+						<div class=" py-0.5 text-sm w-full font-medium">
 							<Tooltip content={_actions[action].meta.description}>
 								{_actions[action].name}
 							</Tooltip>

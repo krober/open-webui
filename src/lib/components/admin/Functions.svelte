@@ -39,7 +39,6 @@
 	import ImportModal from '../ImportModal.svelte';
 	import ViewSelector from '../workspace/common/ViewSelector.svelte';
 	import TagSelector from '../workspace/common/TagSelector.svelte';
-	import { capitalizeFirstLetter } from '$lib/utils';
 	import Spinner from '../common/Spinner.svelte';
 
 	const i18n = getContext('i18n');
@@ -443,9 +442,7 @@
 													placement="top-start"
 												>
 													{$i18n.t('By {{name}}', {
-														name: capitalizeFirstLetter(
-															func?.user?.name ?? func?.user?.email ?? $i18n.t('Deleted User')
-														)
+														name: func?.user?.name ?? func?.user?.email ?? $i18n.t('Deleted User')
 													})}
 												</Tooltip>
 											</div>

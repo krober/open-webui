@@ -50,7 +50,7 @@
 							/>
 						</div>
 
-						<div class=" py-0.5 text-sm w-full capitalize font-medium">
+						<div class=" py-0.5 text-sm w-full font-medium">
 							<Tooltip content={_filters[filter].meta.description}>
 								{_filters[filter].name}
 							</Tooltip>

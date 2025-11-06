@@ -180,9 +180,8 @@
 
 								<div class="flex-1">
 									<select
-										class="w-full capitalize rounded-lg text-sm bg-transparent dark:disabled:text-gray-500 outline-hidden"
+										class="w-full rounded-lg text-sm bg-transparent dark:disabled:text-gray-500 outline-hidden"
 										bind:value={_user.role}
-										placeholder={$i18n.t('Enter Your Role')}
 										required
 									>
 										<option value="pending"> {$i18n.t('pending')} </option>

@@ -96,7 +96,7 @@
 
 							<div class=" flex-1">
 								<div class="overflow-hidden w-ful mb-2">
-									<div class=" self-center capitalize font-medium truncate">
+									<div class="self-center font-medium truncate">
 										{selectedUser.name}
 									</div>
 

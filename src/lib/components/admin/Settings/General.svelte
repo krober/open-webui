@@ -237,12 +237,12 @@
 										target="_blank"
 										class="text-gray-500 mt-0.5"
 									>
-										<span class=" capitalize text-black dark:text-white"
+										<span class="text-black dark:text-white"
 											>{$config?.license_metadata?.type}
 											license</span
 										>
 										registered to
-										<span class=" capitalize text-black dark:text-white"
+										<span class="text-black dark:text-white"
 											>{$config?.license_metadata?.organization_name}</span
 										>
 										for

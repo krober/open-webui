@@ -24,7 +24,7 @@
 	import { getModels } from '$lib/apis';
 	import { getGroups } from '$lib/apis/groups';
 
-	import { capitalizeFirstLetter, copyToClipboard } from '$lib/utils';
+	import { copyToClipboard } from '$lib/utils';
 
 	import EllipsisHorizontal from '../icons/EllipsisHorizontal.svelte';
 	import ModelMenu from './Models/ModelMenu.svelte';
@@ -450,7 +450,7 @@
 										<div class="flex items-center justify-between w-full">
 											<Tooltip content={model.name} className=" w-fit" placement="top-start">
 												<a
-													class=" font-semibold line-clamp-1 hover:underline capitalize"
+													class="font-semibold line-clamp-1 hover:underline"
 													href={`/?models=${encodeURIComponent(model.id)}`}
 												>
 													{model.name}
@@ -571,9 +571,7 @@
 											>
 												<div class="shrink-0 text-gray-500 text-xs">
 													{$i18n.t('By {{name}}', {
-														name: capitalizeFirstLetter(
-															model?.user?.name ?? model?.user?.email ?? $i18n.t('Deleted User')
-														)
+															name: model?.user?.name ?? model?.user?.email ?? $i18n.t('Deleted User')
 													})}
 												</div>
 											</Tooltip>

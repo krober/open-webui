@@ -13,7 +13,7 @@
 		getPrompts,
 		getPromptList
 	} from '$lib/apis/prompts';
-	import { capitalizeFirstLetter, slugify } from '$lib/utils';
+	import { slugify } from '$lib/utils';
 
 	import PromptMenu from './Prompts/PromptMenu.svelte';
 	import EllipsisHorizontal from '../icons/EllipsisHorizontal.svelte';
@@ -328,7 +328,7 @@
 					>
 						<div class=" flex flex-col flex-1 space-x-4 cursor-pointer w-full pl-1">
 							<div class=" flex-1 flex items-center gap-2 self-start">
-								<div class=" font-medium line-clamp-1 capitalize">{prompt.title}</div>
+								<div class=" font-medium line-clamp-1">{prompt.title}</div>
 								<div class=" text-xs overflow-hidden text-ellipsis line-clamp-1 text-gray-500">
 									{prompt.command}
 								</div>
@@ -342,9 +342,7 @@
 								>
 									<div class="shrink-0 text-gray-500">
 										{$i18n.t('By {{name}}', {
-											name: capitalizeFirstLetter(
-												prompt?.user?.name ?? prompt?.user?.email ?? $i18n.t('Deleted User')
-											)
+											name: prompt?.user?.name ?? prompt?.user?.email ?? $i18n.t('Deleted User')
 										})}
 									</div>
 								</Tooltip>

@@ -120,7 +120,7 @@
 					<div class=" flex flex-wrap text-xs gap-1 text-gray-500">
 						{#if item?.type === 'collection'}
 							{#if item?.type}
-								<div class="capitalize shrink-0">{item.type}</div>
+								<div class="shrink-0">{item.type}</div>
 								•
 							{/if}
 
@@ -130,19 +130,19 @@
 							{/if}
 
 							{#if item?.created_at}
-								<div class="capitalize shrink-0">
+								<div class="shrink-0">
 									{dayjs(item.created_at * 1000).format('LL')}
 								</div>
 							{/if}
 						{/if}
 
 						{#if item.size}
-							<div class="capitalize shrink-0">{formatFileSize(item.size)}</div>
+							<div class="shrink-0">{formatFileSize(item.size)}</div>
 							•
 						{/if}
 
 						{#if item?.file?.data?.content}
-							<div class="capitalize shrink-0">
+							<div class="shrink-0">
 								{$i18n.t('{{COUNT}} extracted lines', {
 									COUNT: getLineCount(item?.file?.data?.content ?? '')
 								})}
@@ -154,7 +154,7 @@
 						{/if}
 
 						{#if item?.knowledge}
-							<div class="capitalize shrink-0">
+							<div class="shrink-0">
 								{$i18n.t('Knowledge Base')}
 							</div>
 						{/if}

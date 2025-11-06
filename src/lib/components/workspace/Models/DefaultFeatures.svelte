@@ -43,7 +43,7 @@
 					}}
 				/>
 
-				<div class=" py-0.5 text-sm capitalize">
+				<div class=" py-0.5 text-sm">
 					<Tooltip content={marked.parse(featureLabels[feature].description)}>
 						{$i18n.t(featureLabels[feature].label)}
 					</Tooltip>

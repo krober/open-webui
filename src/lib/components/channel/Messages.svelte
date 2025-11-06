@@ -68,7 +68,7 @@
 			<div class="px-5 max-w-full mx-auto">
 				{#if channel}
 					<div class="flex flex-col gap-1.5 pb-5 pt-10">
-						<div class="text-2xl font-medium capitalize">{channel.name}</div>
+						<div class="text-2xl font-medium">{channel.name}</div>
 
 						<div class=" text-gray-500">
 							{$i18n.t(

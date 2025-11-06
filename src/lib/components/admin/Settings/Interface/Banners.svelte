@@ -60,7 +60,7 @@
 
 			<div class="flex flex-row flex-1 gap-2 items-start">
 				<select
-					class="w-fit capitalize rounded-xl text-xs bg-transparent outline-hidden pl-1 pr-5"
+					class="w-fit rounded-xl text-xs bg-transparent outline-hidden pl-1 pr-5"
 					bind:value={banner.type}
 					required
 				>

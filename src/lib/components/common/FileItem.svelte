@@ -148,10 +148,10 @@
 				{:else if type === 'collection'}
 					{$i18n.t('Collection')}
 				{:else}
-					<span class=" capitalize line-clamp-1">{type}</span>
+					<span class="line-clamp-1">{type}</span>
 				{/if}
 				{#if size}
-					<span class="capitalize">{formatFileSize(size)}</span>
+					<span>{formatFileSize(size)}</span>
 				{/if}
 			</div>
 		</div>
@@ -161,9 +161,9 @@
 				<div class=" dark:text-gray-100 text-sm flex justify-between items-center">
 					<div class="font-medium line-clamp-1 flex-1 pr-1">{decodeString(name)}</div>
 					{#if size}
-						<div class="text-gray-500 text-xs capitalize shrink-0">{formatFileSize(size)}</div>
+						<div class="text-gray-500 text-xs shrink-0">{formatFileSize(size)}</div>
 					{:else}
-						<div class="text-gray-500 text-xs capitalize shrink-0">{type}</div>
+						<div class="text-gray-500 text-xs shrink-0">{type}</div>
 					{/if}
 				</div>
 			</div>

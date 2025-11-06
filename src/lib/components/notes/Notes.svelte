@@ -34,7 +34,7 @@
 	import { WEBUI_NAME, config, prompts as _prompts, user } from '$lib/stores';
 
 	import { createNewNote, deleteNoteById, getNotes } from '$lib/apis/notes';
-	import { capitalizeFirstLetter, copyToClipboard, getTimeRange } from '$lib/utils';
+	import { copyToClipboard, getTimeRange } from '$lib/utils';
 
 	import { downloadPdf } from './utils';
 
@@ -331,7 +331,7 @@
 										>
 											<div class="flex-1">
 												<div class="  flex items-center gap-2 self-center mb-1 justify-between">
-													<div class=" font-semibold line-clamp-1 capitalize">{note.title}</div>
+													<div class=" font-semibold line-clamp-1">{note.title}</div>
 
 													<div>
 														<NoteMenu
@@ -387,9 +387,7 @@
 												>
 													<div class="shrink-0 text-gray-500">
 														{$i18n.t('By {{name}}', {
-															name: capitalizeFirstLetter(
-																note?.user?.name ?? note?.user?.email ?? $i18n.t('Deleted User')
-															)
+															name: note?.user?.name ?? note?.user?.email ?? $i18n.t('Deleted User')
 														})}
 													</div>
 												</Tooltip>

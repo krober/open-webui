@@ -230,7 +230,7 @@
 
 					{#if message.created_at}
 						<div
-							class="mt-1.5 flex shrink-0 items-center text-xs self-center invisible group-hover:visible text-gray-500 font-medium first-letter:capitalize"
+							class="mt-1.5 flex shrink-0 items-center text-xs self-center invisible group-hover:visible text-gray-500 font-medium"
 						>
 							<Tooltip content={dayjs(message.created_at / 1000000).format('LLLL')}>
 								{dayjs(message.created_at / 1000000).format('HH:mm')}
@@ -253,7 +253,7 @@
 
 						{#if message.created_at}
 							<div
-								class=" self-center text-xs invisible group-hover:visible text-gray-400 font-medium first-letter:capitalize ml-0.5 translate-y-[1px]"
+								class="self-center text-xs invisible group-hover:visible text-gray-400 font-medium ml-0.5 translate-y-[1px]"
 							>
 								<Tooltip content={dayjs(message.created_at / 1000000).format('LLLL')}>
 									<span class="line-clamp-1">

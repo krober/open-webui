@@ -147,7 +147,7 @@
 
 					{#if message.timestamp}
 						<div
-							class="self-center text-xs font-medium first-letter:capitalize ml-0.5 translate-y-[1px] {($settings?.highContrastMode ??
+							class="self-center text-xs font-medium ml-0.5 translate-y-[1px] {($settings?.highContrastMode ??
 							false)
 								? 'dark:text-gray-900 text-gray-100'
 								: 'invisible group-hover:visible transition'}"
@@ -171,7 +171,7 @@
 		{:else if message.timestamp}
 			<div class="flex justify-end pr-2 text-xs">
 				<div
-					class="text-[0.65rem] font-medium first-letter:capitalize mb-0.5 {($settings?.highContrastMode ??
+					class="text-[0.65rem] font-medium mb-0.5 {($settings?.highContrastMode ??
 					false)
 						? 'dark:text-gray-100 text-gray-900'
 						: 'invisible group-hover:visible transition text-gray-400'}"

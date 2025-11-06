@@ -188,10 +188,6 @@ export function unescapeHtml(html: string) {
 	return doc.documentElement.textContent;
 }
 
-export const capitalizeFirstLetter = (string) => {
-	return string.charAt(0).toUpperCase() + string.slice(1);
-};
-
 export const splitStream = (splitOn) => {
 	let buffer = '';
 	return new TransformStream({

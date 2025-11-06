@@ -24,7 +24,7 @@
 		config
 	} from '$lib/stores';
 	import { toast } from 'svelte-sonner';
-	import { capitalizeFirstLetter, sanitizeResponseContent, splitStream } from '$lib/utils';
+	import { sanitizeResponseContent, splitStream } from '$lib/utils';
 	import { getModels } from '$lib/apis';
 
 	import ChevronDown from '$lib/components/icons/ChevronDown.svelte';
@@ -467,7 +467,7 @@
 									class="min-w-fit outline-none px-1.5 py-0.5 {selectedTag === '' &&
 									selectedConnectionType === ''
 										? ''
-										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
 									aria-pressed={selectedTag === '' && selectedConnectionType === ''}
 									on:click={() => {
 										selectedConnectionType = '';
@@ -482,7 +482,7 @@
 								<button
 									class="min-w-fit outline-none px-1.5 py-0.5 {selectedConnectionType === 'local'
 										? ''
-										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
 									aria-pressed={selectedConnectionType === 'local'}
 									on:click={() => {
 										selectedTag = '';
@@ -497,7 +497,7 @@
 								<button
 									class="min-w-fit outline-none px-1.5 py-0.5 {selectedConnectionType === 'external'
 										? ''
-										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
 									aria-pressed={selectedConnectionType === 'external'}
 									on:click={() => {
 										selectedTag = '';
@@ -512,7 +512,7 @@
 								<button
 									class="min-w-fit outline-none px-1.5 py-0.5 {selectedConnectionType === 'direct'
 										? ''
-										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+										: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
 									aria-pressed={selectedConnectionType === 'direct'}
 									on:click={() => {
 										selectedTag = '';
@@ -528,7 +528,7 @@
 									<button
 										class="min-w-fit outline-none px-1.5 py-0.5 {selectedTag === tag
 											? ''
-											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition capitalize"
+											: 'text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'} transition"
 										aria-pressed={selectedTag === tag}
 										on:click={() => {
 											selectedConnectionType = '';
